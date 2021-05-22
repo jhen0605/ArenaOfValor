@@ -81,7 +81,7 @@ class ViewController: UIViewController {
             if RandomNum == 2 && wildSwitch.isOn == false{personaImage.image = #imageLiteral(resourceName: "奎倫.jpg")}
             if RandomNum == 3 && wildSwitch.isOn == false{personaImage.image = #imageLiteral(resourceName: "莫拉.jpg")}
             
-            RandomNum = Int.random(in: 1...5)
+            RandomNum = Int.random(in: 1...5)  //switchOn
             if RandomNum == 1 && wildSwitch.isOn == true{personaImage.image = #imageLiteral(resourceName: "潘因.jpg")}
             if RandomNum == 2 && wildSwitch.isOn == true{personaImage.image = #imageLiteral(resourceName: "蝙蝠俠.jpg")}
             if RandomNum == 3 && wildSwitch.isOn == true{personaImage.image = #imageLiteral(resourceName: "科里納卡.jpg")}
@@ -106,7 +106,7 @@ class ViewController: UIViewController {
             if RandomNum == 4 && wildSwitch.isOn == false{personaImage.image = #imageLiteral(resourceName: "凡恩.jpg")}
             if RandomNum == 4 && wildSwitch.isOn == false{personaImage.image = #imageLiteral(resourceName: "勇.jpg")}
 
-            RandomNum = Int.random(in: 1...2)
+            RandomNum = Int.random(in: 1...2)  //switchOn
             if RandomNum == 1 && wildSwitch.isOn == true{personaImage.image = #imageLiteral(resourceName: "菲尼克.jpg")}
             if RandomNum == 2 && wildSwitch.isOn == true{personaImage.image = #imageLiteral(resourceName: "凡恩.jpg")}
             }
@@ -147,7 +147,7 @@ class ViewController: UIViewController {
                 if RandomNum == 1 && wildSwitch.isOn == false{personaImage.image = #imageLiteral(resourceName: "蘇離.jpg")}
                 if RandomNum == 2 && wildSwitch.isOn == false{personaImage.image = #imageLiteral(resourceName: "綺蘿.jpg")}
                 
-                RandomNum = Int.random(in: 1...2)
+                RandomNum = Int.random(in: 1...2)  //switchOn
                 if RandomNum == 1 && wildSwitch.isOn == true{personaImage.image = #imageLiteral(resourceName: "刀鋒寶貝.jpg")}
                 if RandomNum == 2 && wildSwitch.isOn == true{personaImage.image = #imageLiteral(resourceName: "愛里.jpg")}
                 }
@@ -184,6 +184,7 @@ class ViewController: UIViewController {
             }
        }
     
+    //隨機Button
     @IBAction func randomButton(_ sender: UIButton) {
         
         RandomNum = Int.random(in: 1...61)
